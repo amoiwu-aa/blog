@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的网页</title>
+    <link rel="stylesheet" href="./css/a.css">
+    <script src="./js/123.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>    
+</head>
+
+<body>
+    <div class="topNavBar" >
+        <div class="topNavBar-inner" class="clearfix">
+                <a class="logo" href="#" alt="logo" style="float: left">
+                        <span class="rs">RS</span>
+                        <span class="card">card</span>
+                </a>
+                    <nav style="float: right">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="#">SKILLS</a>
+                            </li>
+                            <li>
+                                <a href="#">EXPERIENCE</a>
+                            </li>
+                            <li>
+                                <a href="#">PRICING</a>
+                            </li>
+                            <li>
+                                <a href="#">BLOG</a>
+                            </li>
+                            <li>
+                                <a href="#">CALENDAR</a>
+                            </li> 
+                            <li>
+                                <a href="#">OTHER</a>
+                            </li>
+                            <li>
+                                <a href="#">ALL DEMOS</a>
+                            </li>
+                        </ul>  
+                    
+                    </nav>
+                </div>
+                </div>
+               
+        </div>
+        <div class="banner">
+            <div class="mask"></div>
+            </div>
+        <main>
+        <div class="usercard ">
+            <div class="pictureAndText clearfix">
+            <div class="picture"><img src="./img/avatar.png "width="299px" height="347px" alt="头像">
+            </div>
+            <div class="text">
+                <span class="welcome">Hello
+                <span class="triangle"></span></span>
+                <h1>吴翔</h1>
+                <p>前端开发工程师</p>
+                <hr>
+                <dl>
+                    <dt>年龄</dt>
+                    <dd>18</dd>
+                    <dt>所在城市</dt>
+                    <dd>九江</dd>
+                    <dt>邮箱</dt>
+                    <dd>1770310371@qq.com</dd>
+                    <dt>手机</dt>
+                    <dd>13247813913</dd>
+                </dl>
+            </div>
+        </div>
+                       <footer class="media">
+                            <a href="#">
+                                    <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-github"></use>
+                                        </svg>
+                                </a>
+                            <a href="#">
+                                    <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-weibo"></use>
+                                        </svg>
+                                </a>
+                            <a href="#">
+                                    <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-facebook"></use>
+                                        </svg>
+                                </a>
+                            <a href="#">
+                                    <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-icon"></use>
+                                        </svg>
+                                </a>
+                            <a href="#">
+                                    <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-weixin"></use>
+                                        </svg>
+                                </a>
+                            <a href="#">
+                                    <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-gugegoogle114"></use>
+                                        </svg>
+                                </a>
+    
+                    </footer>
+        </div>
+       
+        
+    </main>
+    <div> 
+            <p class="downloadresume-wrapper" style="text-align: center;">
+                <a href="./resume.pdf"  class="downloadresume" target="_blank" download>下载 pdf 简历</a>
+            </p>
+           <p class="selfintroduction">
+               <span>吴翔</span>，未来前端工程师，硬件工程师 <br>
+               技能：前端开发，Rails开发，Node.js 开发，DAC开发，arm 开发，os开发，人工智能，python，java，大数据
+           </p>
+        
+    </div>
+    <section class="skills">
+        <h2>部分技能</h2> 
+       <ol class="clearfix">
+       <li>
+                <h3>HTML  CSS 3</h3>
+                <div class="progressbar"><div class="progress1"></div></div>
+        </li>
+        <li>
+                <h3>JavaScript</h3>
+                <div class="progressbar"><div class="progress2"></div></div>
+        </li>
+        <li>
+                <h3>jQuery</h3>
+                <div class="progressbar"><div class="progress3"></div></div>
+        </li>
+        <li>
+                <h3>vue.js</h3>
+                <div class="progressbar"><div class="progress4"></div></div>
+        </li>
+        <li>
+                <h3>React.js</h3>
+                <div class="progressbar"><div class="progress5"></div></div>
+        </li>
+        <li>
+                <h3>node.js</h3>
+                <div class="progressbar"><div class="progress6"></div></div>
+         </li>
+       </ol>
+   </section>
+   <section class="portfolio">
+       <h2>作品集</h2>
+       <nav>
+           <ol class="clearfix">
+               <li id="portfolioAll">所有</li>
+               <li id="portfolioFramework">框架</li>
+               <li id="portfolioVallina">原生JS&amp;CSS</li>
+           </ol>
+           <div id="portfolioBar" class="bar state-1"><div class="inner"></div></div>
+       </nav>
+       <script>
+       portfolioAll.onclick= function(){
+        portfolioBar.className = 'bar state-1'
+
+       }
+       portfolioFramework.onclick= function(){
+        portfolioBar.className = 'bar state-2'
+
+       }
+       portfolioVallina.onclick= function(){
+        portfolioBar.className = 'bar state-3'
+
+       }
+       </script>
+       <div class="works" style="height: 578px;">
+           <div class="big" style="top:0;left: 0;">
+               <img src="./img/1.jpg" alt="作品1">
+           </div>
+           <div style="top:0;left: 644px;" class="small"><img src="./img/2.jpg" alt="作品2"></div>
+           <div style="top:298px;left: 644px;" class="small"><img src="./img/3.jpg" alt="作品3"></div>
+       </div>
+   </section>>      
+    
+   
+</body>
+</html>
+
