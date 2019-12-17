@@ -1,0 +1,91 @@
+body{
+    /* border: 1px solid red  ; */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: linear-gradient(126deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+    background-size: 400%;
+    animation: bganimation 15s infinite;
+}
+@keyframes bganimation {
+    0%{
+      background-position: 0% 50%;          /*从左中开始*/
+    }
+    50%{
+      background-position: 100% 50%;        /*到右中*/
+    }
+    100%{
+      background-position: 0% 50%;          /*再回到左中*/
+    }
+  }
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+main{
+    text-align: center;
+    border: 1px solid transparent;
+
+}
+ul li{
+    list-style:none;
+}
+ul li.align{
+    position: absolute  ;
+    /* border: 1px solid red; */
+    margin-top: -150px;
+    margin-left:37px;
+    font-size: 2em;
+}
+ul li a{
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    transition: 1.5s;
+}
+ul li a:hover{
+    color: #fff;
+}
+ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 1.5s;
+    z-index: -1;
+}
+ul li a:hover::before{
+    transform: scaleY(3);
+    opacity: 1;
+}
+ul li a::after{
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 100%;
+    height: 100%;
+    background:#000;
+    transform: scale(0);
+    transition: .5s;
+    z-index: -1;
+}
+ul li a:hover::after{
+    transform: scale(0.9);
+}
