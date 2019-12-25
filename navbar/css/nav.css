@@ -1,12 +1,22 @@
-body{
-    /* border: 1px solid red  ; */
+*{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background-image: linear-gradient(126deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
-    background-size: 400%;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red  ; */
+    /* font-family: sans-serif; */
+    background: linear-gradient(140deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+    background-size:500%;
     animation: bganimation 15s infinite;
 }
+
+span {
+    text-align: center;
+    font-size: 5em;
+}
+
 @keyframes bganimation {
     0%{
       background-position: 0% 50%;          /*从左中开始*/
